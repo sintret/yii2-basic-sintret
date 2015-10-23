@@ -108,14 +108,14 @@ class m151022_022744_sintret extends Migration {
         ]);
 
         $this->createTable('tbl_dynagrid', [
-            'id' => $this->primaryKey(),
+            'id' => $this->string(),
             'filter_id' => $this->string(),
             'sort_id' => $this->string(),
             'data' => $this->text(),
         ]);
 
         $this->createTable('tbl_dynagrid_dtl', [
-            'id' => $this->primaryKey(),
+            'id' => $this->string(),
             'category' => $this->string(),
             'name' => $this->string(),
             'data' => $this->text(),
