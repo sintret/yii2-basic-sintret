@@ -1,10 +1,10 @@
 <?php
-use kartik\tabs\TabsX;
 use yii\helpers\Url;
-
+use yii\bootstrap\Tabs;
 $this->title = $user->name .' profile';
 //$this->registerMetaTag(['name' => 'keywords', 'content' => $user->shortDescription]);
 ?>
+
 <?php
 
 
@@ -30,9 +30,7 @@ $items = [
 //    ],
 ];
 // Above
-echo TabsX::widget([
+echo Tabs::widget([
     'items' => $items,
-    'position' => TabsX::POS_ABOVE,
     'encodeLabels' => false
 ]);
-// Below
