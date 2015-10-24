@@ -10,7 +10,7 @@
         "forum": "http://sintret.com",
         "source": "https://github.com/sintret/yii2-basic-sintret"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.5",
