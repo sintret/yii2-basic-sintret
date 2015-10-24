@@ -167,7 +167,7 @@ class m151022_022744_sintret extends Migration {
 
 
         $this->createTable('my_session', [
-            'id' => $this->primaryKey(),
+            'id' => $this->primaryKey()->string(128),
             'expire' => $this->integer(),
             'data' => $this->text(),
         ]);
