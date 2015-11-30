@@ -54,6 +54,7 @@ class SiteController extends Controller {
         }
         $view = 'index';
         return $this->render($view, [
+                    'settings' => \app\models\Setting::findOne(1)
         ]);
     }
 
