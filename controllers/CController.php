@@ -12,10 +12,8 @@ use yii\web\Controller;
 class CController extends Controller {
 
     public $user;
-    public $settings;
 
     public function init() {
-        
         parent::init();
     }
 
@@ -23,7 +21,6 @@ class CController extends Controller {
         $actionId = $action->id;
         $method = strtolower(Yii::$app->controller->id);
         $actionMethod = $method . '.' . $actionId;
-        //echo 'method is :'. $method.' & action is :'.$actionId;exit(0); 
 
         if (in_array($actionMethod, self::fieldsArray())) {
             if ($this->accessMenu($actionMethod))
@@ -64,6 +61,10 @@ class CController extends Controller {
                     'roleId' => $roleId,
                     'LOWER(controller)' => strtolower($parts[0]),
                     'LOWER(method)' => strtolower($parts[1])])->exists();
+    }
+
+    public static function accessTo($name) {
+        return self::checkAccess($name, Yii::$app->user->identity->roleId);
     }
 
     public static function checkManyAccess($array, $roleId) {
