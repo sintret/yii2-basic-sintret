@@ -62,7 +62,7 @@ class RoleController extends CController {
         $fields = Role::accessFilter();
         $controllers = Role::$controllers;
 
-        $roleId = $_GET['roleId'] == null ? 1 : $_GET['roleId'];
+        $roleId = isset($_GET['roleId']) == null ? 1 : $_GET['roleId'];
         $model = $this->findModel($roleId);
         $model->role_name = $roleId;
 
