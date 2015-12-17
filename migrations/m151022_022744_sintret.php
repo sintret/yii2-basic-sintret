@@ -61,7 +61,17 @@ class m151022_022744_sintret extends Migration {
 
         $this->insert('access', [
             'roleId' => 1,
+            'controller' => 'Role',
+            'method' => 'index'
+        ]);
+         $this->insert('access', [
+            'roleId' => 1,
             'controller' => 'User',
+            'method' => 'index'
+        ]);
+         $this->insert('access', [
+            'roleId' => 1,
+            'controller' => 'Setting',
             'method' => 'index'
         ]);
 
@@ -165,12 +175,12 @@ class m151022_022744_sintret extends Migration {
             'description' => 'Using Admin sintret Basic'
         ]);
 
-
-        $this->createTable('my_session', [
-            'id' => $this->primaryKey()->string(128),
-            'expire' => $this->integer(),
-            'data' => $this->text(),
-        ]);
+//
+//        $this->createTable('my_session', [
+//            'id' => $this->primaryKey()->string(128),
+//            'expire' => $this->integer(),
+//            'data' => $this->text(),
+//        ]);
     }
 
     public function safeDown() {
@@ -182,7 +192,7 @@ class m151022_022744_sintret extends Migration {
         $this->dropTable('todolist');
         $this->dropTable('setting');
         $this->dropTable('user');
-        $this->dropTable('my_session');
+        //$this->dropTable('my_session');
     }
 
     /*
