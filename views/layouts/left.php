@@ -54,35 +54,7 @@ use yii\bootstrap\Nav;
                 ]
         );
         ?>
-        <?php if (app\controllers\CController::checkAccess("delivery.index", Yii::$app->user->identity->roleId)) { ?>
-            <ul class="sidebar-menu">
-                <li class="treeview">
-                    <a href="<?= \yii\helpers\Url::to(['/delivery']) ?>">
-                        <i class="fa fa-motorcycle"></i> <span>Delivery</span>
-                    </a>
-                </li>
-            </ul>
-        <?php } ?>
-        <?php if (app\controllers\CController::checkAccess("stock.index", Yii::$app->user->identity->roleId)) { ?>
-            <ul class="sidebar-menu">
-                <li class="treeview">
-                    <a href="<?= \yii\helpers\Url::to(['/stock']) ?>">
-                        <i class="fa fa-calculator"></i> <span>Stock</span>
-                    </a>
-                </li>
-            </ul>
-        <?php } ?>
-
-        <?php if (app\controllers\CController::checkAccess("chat.index", Yii::$app->user->identity->roleId)) { ?>
-            <ul class="sidebar-menu">
-                <li class="treeview">
-                    <a href="<?= \yii\helpers\Url::to(['/chat']) ?>">
-                        <i class="fa fa-user"></i> <span>Chat</span>
-                    </a>
-                </li>
-            </ul>
-        <?php } ?>
-     
+       
         <?php if (app\controllers\CController::checkAccess("user.index", Yii::$app->user->identity->roleId)) { ?>
             <ul class="sidebar-menu">
                 <li class="treeview">
