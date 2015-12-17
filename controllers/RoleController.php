@@ -66,6 +66,8 @@ class RoleController extends CController {
         $model = $this->findModel($roleId);
         $model->role_name = $roleId;
 
+        $sql = '';
+
         //echo '<pre>';print_r($_POST['Roles']); exit(0);
         if ($model->load(Yii::$app->request->post())) {
             \app\models\Access::deleteAll('roleId = :roleId', [':roleId' => $roleId]);
