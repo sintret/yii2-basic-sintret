@@ -8,10 +8,10 @@ $config = [
     'bootstrap' => ['log'],
     'name' => 'Sintret Maintenance',
     'components' => [
-        'session' => [
-            'class' => 'yii\web\DbSession',
-            'sessionTable' => 'my_session',
-        ],
+//        'session' => [
+//            'class' => 'yii\web\DbSession',
+//            'sessionTable' => 'my_session',
+//        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '_XKDwvzPw2EyhxtTQGmJdxLaH8vydnTB',
