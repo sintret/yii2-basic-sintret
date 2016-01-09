@@ -23,7 +23,7 @@
         "sintret/yii2-todolist": "dev-master",
         "miloschuman/yii2-highcharts-widget": "*",
         "mihaildev/yii2-ckeditor": "*",
-        "sintret/yii2-gii-sintret": "dev-master",
+        "sintret/yii2-gii2": "dev-master",
         "kartik-v/yii2-mpdf": "*",
         "kartik-v/yii2-checkbox-x": "@dev"
     },
