@@ -74,6 +74,16 @@ class m151022_022744_sintret extends Migration {
             'controller' => 'Setting',
             'method' => 'index'
         ]);
+         $this->insert('access', [
+            'roleId' => 1,
+            'controller' => 'Setting',
+            'method' => 'update'
+        ]);
+          $this->insert('access', [
+            'roleId' => 1,
+            'controller' => 'Log-Upload',
+            'method' => 'index'
+        ]);
 
         $this->createTable('chat', [
             'id' => $this->primaryKey(),
