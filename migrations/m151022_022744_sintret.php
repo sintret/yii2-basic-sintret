@@ -172,7 +172,10 @@ class m151022_022744_sintret extends Migration {
 
         $this->insert('setting', [
             'applicationName' => 'Sintret Basic',
-            'description' => 'Using Admin sintret Basic'
+            'description' => 'Using Admin sintret Basic',
+            'emailAdmin'=>'your_email@gmail.com',
+            'emailSupport'=>'your_email@gmail.com',
+            'emailOrder'=>'your_email@gmail.com',
         ]);
 
 //
