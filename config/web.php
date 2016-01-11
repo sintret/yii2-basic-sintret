@@ -71,12 +71,12 @@ $config = [
             // enter optional module parameters below - only if you need to
             // use your own export download action or custom translation
             // message source
-            'downloadAction' => 'gridview/export/download',
-            'i18n' => [
-                'class' => 'yii\i18n\PhpMessageSource',
-                'basePath' => '@kvdynagrid/messages',
-                'forceTranslation' => true
-            ]
+//            'downloadAction' => 'gridview/export/download',
+//            'i18n' => [
+//                'class' => 'yii\i18n\PhpMessageSource',
+//                'basePath' => '@kvdynagrid/messages',
+//                'forceTranslation' => true
+//            ]
         ]
     ],
 ];
