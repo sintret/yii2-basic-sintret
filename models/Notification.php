@@ -86,7 +86,10 @@ class Notification extends \yii\db\ActiveRecord {
     }
 
     public static function notification() {
-        $models = static::find()->orderBy('id desc')->all();
+        $query = static::find();
+        $query->orderBy('id desc');
+        $query->limit(10);
+        $models = $query->all();
         $return = '';
         $return .='<li class="dropdown notifications-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
